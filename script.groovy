@@ -26,7 +26,7 @@ def buildImage() {
 
 def sonarTest() {
     echo "Running sonarQube checks..."
-    sh 'mvn clean verify sonar:sonar   -Dsonar.projectKey=DevOpsProject   -Dsonar.host.url=http://172.21.0.3:9000   -Dsonar.login=sqp_c114049756b2a45c74b9a78aec56f2d48134dd4b'
+    sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=DevOpsProject -Dsonar.host.url=http://172.21.0.2:9000 -Dsonar.login=sqp_d3183c1222407b05b7ff913ff453ddb8980bcd90'
 }
 
 

@@ -40,7 +40,7 @@ pipeline {
         stage('test with sonar') {
             steps {
                 script {
-                    gv.sonarTest()
+                    //gv.sonarTest()
                 }
             }
         }
