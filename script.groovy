@@ -40,5 +40,4 @@ def pushToNexus() {
     sh 'mvn clean deploy -Dmaven.test.skip=true'
 }
 
-
 return this
