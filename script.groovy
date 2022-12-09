@@ -18,9 +18,9 @@ def runUnitTests() {
 def buildImage() {
     echo "building the docker image..."
     withCredentials([usernamePassword(credentialsId: 'docker-cred', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
-        sh 'docker build -t hanaghz/demo-app:${IMAGE_NAME} .'
+        sh 'docker build -t anisbg/async-communication:${IMAGE_NAME} .'
         sh "echo $PASS | docker login -u $USER --password-stdin"
-        sh 'docker push hanaghz/demo-app:${IMAGE_NAME}'
+        sh 'docker push anisbg/async-communication:${IMAGE_NAME}'
     }
 }
 
